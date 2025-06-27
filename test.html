@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marquee with Backgrounds</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: "Inter", sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        marquee {
+            width: 80%; /* Adjust width for responsiveness */
+            padding: 10px 0;
+            margin-bottom: 10px;
+            border-radius: 8px; /* Rounded corners for marquee */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        font {
+            font-size: 2em; /* Larger font size for better visibility */
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            marquee {
+                width: 95%; /* Adjust width for smaller screens */
+            }
+            font {
+                font-size: 1.5em; /* Smaller font size on mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <marquee style="background-color: #e0f7fa; color: #00796b;"><font>Nikhil is The Best Coder</font></marquee>
+    <marquee style="background-color: #ffe0b2; color: #ef6c00;"><font color='red'>Nikhil is The Best Coder</font></marquee>
+    <marquee style="background-color: #fff9c4; color: #fbc02d;"><font color='yellow'>Nikhil is The Best Coder</font></marquee>
+    <marquee style="background-color: #e3f2fd; color: #1976d2;"><font color='blue'>Nikhil is The Best Coder</font></marquee>
+
+</body>
+</html>
